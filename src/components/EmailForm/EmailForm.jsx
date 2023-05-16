@@ -35,10 +35,10 @@ const EmailForm = () => {
         setButtonText("Send");
         setFormDetails(formInitialDetails)
 
-        if(result.code == 200){
+        if(result.code === 200){
             setStatus({success: true, message: "Message sent successfully"})
         } else{
-            setStatus({success: false, message: "Something went wrong"})
+            setStatus({success: false, message: "Something went wrong. Please try again later"})
         }
     }
     return (
