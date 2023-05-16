@@ -31,7 +31,7 @@ const EmailForm = () => {
             body: JSON.stringify(formDetails)
         });
 
-        let result = await response.json();
+        let result = response.json();
         setButtonText("Send");
         setFormDetails(formInitialDetails)
 
